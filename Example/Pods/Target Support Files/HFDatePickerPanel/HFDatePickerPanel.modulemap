@@ -1,0 +1,6 @@
+framework module HFDatePickerPanel {
+  umbrella header "HFDatePickerPanel-umbrella.h"
+
+  export *
+  module * { export * }
+}

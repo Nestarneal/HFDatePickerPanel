@@ -1,0 +1,23 @@
+PODS:
+  - HFDatePickerPanel (0.0.1):
+    - HFDatePickerTextField (~> 1.1)
+  - HFDatePickerTextField (1.1.1)
+
+DEPENDENCIES:
+  - HFDatePickerPanel (from `../../HFDatePickerPanel`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HFDatePickerTextField
+
+EXTERNAL SOURCES:
+  HFDatePickerPanel:
+    :path: "../../HFDatePickerPanel"
+
+SPEC CHECKSUMS:
+  HFDatePickerPanel: 9b87014fcd7452d679ac391afd16f267f8b04476
+  HFDatePickerTextField: 069228bd1365d7de03aec5261b3186c66b1dfb1d
+
+PODFILE CHECKSUM: c8b99768335a617e0401b0f4bcb117f34a75792b
+
+COCOAPODS: 1.5.2

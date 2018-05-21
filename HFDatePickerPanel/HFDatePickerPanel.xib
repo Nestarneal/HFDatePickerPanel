@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFDatePickerPanel" customModule="HFDatePickerPanel" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-dZ-WBb">
+                    <rect key="frame" x="262.5" y="0.0" width="112.5" height="121"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="&gt;">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="DjA-qB-jTG"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzK-kr-wSX" customClass="DatePickerTextField" customModule="HFDatePickerTextField">
+                    <rect key="frame" x="112.5" y="0.0" width="150" height="121"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="datePickerTextFieldDelegate" destination="-1" id="4cp-7p-ihd"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="old-7B-Gic">
+                    <rect key="frame" x="0.0" y="0.0" width="112.5" height="121"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="&lt;">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="SLW-Wm-29O"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jzK-kr-wSX" secondAttribute="bottom" id="6ek-Jt-xdI"/>
+                <constraint firstItem="jzK-kr-wSX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6pC-RT-d3f"/>
+                <constraint firstItem="jzK-kr-wSX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9ai-Zy-0Cq"/>
+                <constraint firstItem="jzK-kr-wSX" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="Mam-ML-uV4"/>
+                <constraint firstAttribute="trailing" secondItem="NZt-dZ-WBb" secondAttribute="trailing" id="NYB-aV-Okb"/>
+                <constraint firstItem="NZt-dZ-WBb" firstAttribute="leading" secondItem="jzK-kr-wSX" secondAttribute="trailing" id="g4E-yt-kxl"/>
+                <constraint firstItem="NZt-dZ-WBb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h4S-cJ-b83"/>
+                <constraint firstItem="old-7B-Gic" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hg7-gg-VqZ"/>
+                <constraint firstAttribute="bottom" secondItem="NZt-dZ-WBb" secondAttribute="bottom" id="kyt-vb-RYA"/>
+                <constraint firstItem="old-7B-Gic" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oxR-ZE-wEb"/>
+                <constraint firstItem="jzK-kr-wSX" firstAttribute="leading" secondItem="old-7B-Gic" secondAttribute="trailing" id="p5v-Aj-Knu"/>
+                <constraint firstAttribute="bottom" secondItem="old-7B-Gic" secondAttribute="bottom" id="yKz-U3-TwV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="12.5" y="-145.5"/>
+        </view>
+    </objects>
+</document>
