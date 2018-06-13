@@ -48,6 +48,14 @@ public class HFDatePickerPanel: UIView {
         }
     }
     
+    // MARK: - Interfaces
+    
+    public func setDate(_ date: Date) {
+        
+        currentDate = date
+        datePickerTextfield.set(date: date)
+    }
+    
     // MARK: - Initialization
     
     private func setUp() {
