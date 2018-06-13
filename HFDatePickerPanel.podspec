@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HFDatePickerPanel"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "HFDatePickerPanel provide a panel for picking date."
 
   s.description  = "HFDatePickerPanel provide a panel for picking date. You can conform the protocol HFDatePickerPanelDelegate to receive the date selected event and perform your custom actions!"
