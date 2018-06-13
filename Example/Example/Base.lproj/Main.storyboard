@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,12 +37,54 @@
                                     <constraint firstAttribute="height" constant="120" id="FXr-S5-ndI"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruL-Lv-SOz">
+                                <rect key="frame" x="16" y="415" width="30" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="CIK-WJ-HpK"/>
+                                    <constraint firstAttribute="width" constant="30" id="nvd-ns-UTS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toPreviousDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlY-Nl-4Cq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6s-W4-4nf">
+                                <rect key="frame" x="67" y="412" width="240" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9Iz-sA-oYb"/>
+                                    <constraint firstAttribute="height" constant="54" id="akD-6w-IcR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKO-Jt-yBX">
+                                <rect key="frame" x="329" y="415" width="30" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DJI-2R-ReC"/>
+                                    <constraint firstAttribute="height" constant="48" id="qiv-Do-8cV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toNextDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOP-Hl-PP5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="h6s-W4-4nf" firstAttribute="top" secondItem="aOo-3g-uQf" secondAttribute="bottom" constant="18.5" id="A0S-q7-LAm"/>
                             <constraint firstAttribute="trailing" secondItem="aOo-3g-uQf" secondAttribute="trailing" id="GZN-uK-0PU"/>
+                            <constraint firstItem="h6s-W4-4nf" firstAttribute="leading" secondItem="ruL-Lv-SOz" secondAttribute="trailing" constant="21" id="QdA-J8-Tk8"/>
+                            <constraint firstItem="h6s-W4-4nf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIt-0v-Tzb"/>
+                            <constraint firstItem="ruL-Lv-SOz" firstAttribute="centerY" secondItem="h6s-W4-4nf" secondAttribute="centerY" id="Udt-ef-Bhn"/>
                             <constraint firstItem="aOo-3g-uQf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fyW-SY-D02"/>
                             <constraint firstItem="aOo-3g-uQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kmI-2Y-TK1"/>
+                            <constraint firstItem="GKO-Jt-yBX" firstAttribute="centerY" secondItem="h6s-W4-4nf" secondAttribute="centerY" id="qHU-8l-Rwp"/>
+                            <constraint firstItem="GKO-Jt-yBX" firstAttribute="leading" secondItem="h6s-W4-4nf" secondAttribute="trailing" constant="22" id="qIT-s5-fTB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -52,6 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="109.29535232383809"/>
         </scene>
     </scenes>
 </document>
